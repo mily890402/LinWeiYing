@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style type="text/css">
+        table { /*表格設定*/
+            margin-left: -10px;
+            margin-top: -10px;
+            width: 1600px;
+            position: relative;
+        }
+
+        body {
+            background-color: white;
+            width: 1600px;
+            overflow-x: hidden; /*關閉橫向卷軸*/
+        }
+
+        .title_1 { /*標題圖片*/
+            width: 250px;
+            height: 250px;
+            margin-left: 100px;
+            padding-top: 10px;
+        }
+
+        .pic_1 { /*梵谷生平介紹圖片*/
+            width: 450px;
+            height: 600px;
+            margin-left: 60px;
+            padding-top: 20px;
+        }
+
+        .pic_2 { /*吃馬鈴薯的人圖片*/
+            width: 365px;
+            height: 265px;
+        }
+
+        .pic_3 { /*便籤圖片*/
+            width: 400px;
+            height: 400px;
+        }
+
+        .pic_4 { /*便籤上圖片*/
+            width: 250px;
+            height: 300px;
+        }
+
+        .pic_5 { /*星夜和隆河星夜圖片設定*/
+            margin-left: 60px;
+            margin-top: 40px;
+            width: 540px;
+            height: 350px;
+        }
+
+        .td_1 { /*表格背景顏色*/
+            background-color: #CCDDFF;
+        }
+
+        .td_2 { /*第二個表格背景*/
+            background-color: white;
+        }
+
+        b { /*文森˙梵谷文字設定*/
+            font-family: Comic Sans MS; /*字形樣式*/
+            font-size: 50px;
+            margin-left: 40px;
+            padding-top: 70px;
+            position: absolute;
+            color: dimgray;
+        }
+
+        .b_1 { /*生於~卒於文字設定*/
+            font-family: Comic Sans MS;
+            font-size: 25px;
+            font-style: italic; /*斜體*/
+            margin-right: 15px;
+            padding-top: 140px;
+            position: absolute;
+            color: dimgray;
+        }
+
+        .b_2 { /*圖片文字設定*/
+            font-family: DFKai-sb;
+            font-size: 25px;
+            padding-top: 1px;
+            color: black;
+        }
+
+        .pre_1 { /*生平文字設定*/
+            font-style: italic;
+            font-weight: bold; /*粗體*/
+            font-size: 40px;
+            color: cornflowerblue;
+            text-shadow: 1px 3px 3px #1c4e79; /*文字陰影(左右、上下、模糊度)*/
+        }
+        /*------導覽列------*/
+        li {
+            list-style: none; /*列表符號去除*/
+        }
+
+        nav > ul {
+            text-align: center;
+            font-size: 0; /* 移除 <li> 之間的空隙 */
+            padding-left: 690px;
+            padding-top: 190px;
+        }
+
+            nav > ul > li {
+                display: inline-block; /*強迫在同一行*/
+            }
+
+                nav > ul > li > a {
+                    text-decoration: none; /*移除超連結樣式*/
+                    display: block;
+                    font-family: cursive;
+                    font-size: 25px;
+                    padding: 25px; /*導覽列項目間隔距離*/
+                    color: black;
+                    height: 15px;
+                }
+
+                    nav > ul > li > a:hover {
+                        color: white;
+                        border-bottom: 4px solid darkslateblue;
+                    }
+        /*------導覽列------*/
+        section { /*文章內容，段落*/
+            width: 900px;
+            position: absolute;
+            margin-top: -10px;
+            margin-left: 560px;
+            font-size: 25px;
+            font-family: DFKai-sb;
+            color: black;
+        }
+
+        div {
+            font-size: 18px;
+            font-family: DFKai-sb;
+        }
+
+        .div_2 {
+            background-color: gainsboro;
+            width: 660px;
+            height: 430px;
+            margin-left: 40px;
+        }
+
+        article {
+            width: 1400px;
+            margin-left: 50px;
+            font-size: 18px;
+            font-family: DFKai-sb;
+        }
+
+        .a_1 {
+            margin-left: 700px;
+            font-family: DFKai-sb;
+            font-size: 25px;
+            margin-top: -90px;
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <!-- header/nav/LOGO設計與導覽列設定、main主圖設定 -->
+            <header>
+                <td id="top" class="td_1" style="height:280px; background-image:url(backgroundimg.jpg)"><!-- 表格 1 -->
+                    <main>
+                        <img src="title.png" class="title_1" style="float:left" />
+                        <b>文森•梵谷</b><br />
+                        <b class="b_1">生於1853年，卒於1980年</b>
+                        <nav>
+                            <ul><!-- 錨點連結 -->
+                                <li><a href="#Life">生平</a></li>
+                                <li><a href="#Impressionism">後印象派介紹</a></li>
+                                <li><a href="#Period">三個時期畫風介紹</a></li>
+                                <li><a href="#Data">參考資料</a></li>
+                            </ul>
+                        </nav>
+                    </main>
+                </td>
+            </header>
+        </tr>
+        <tr>
+            <td id="Life" class="td_2"><!-- 表格 2 -->
+                <img src="1.jpg" class="pic_1" style="float:left" />
+                <section><!-- 文章內容、段落 -->
+                    <pre class="pre_1">★ 生平</pre>
+                    <div>
+                        &nbsp;&nbsp;&nbsp;&nbsp;梵谷生於1853年布拉邦省(Brabant)的小鎮赫崙桑得(Groot - Zundert)，從小深受法國藝術氣息薰陶。<br /><br />
+                        &nbsp;&nbsp;&nbsp;&nbsp;梵谷自幼喜愛繪畫，十六歲時結束學業。他的叔叔當時是畫商，幫他在畫行海牙總行謀到一份職員差事，但他對藝術
+                        日益著迷，經商的興趣就越來越淡，1876年，他被公司解雇，回到故鄉荷蘭。<br /><br />
+                        &nbsp;&nbsp;&nbsp;&nbsp;1880年10月，梵谷前往布魯塞爾學習解剖學、透視學，可是因生活困難，被迫輟學回家，此時他愛上寡居的表姐，但
+                        表姐回絕了他的求愛，同時也與父親劇烈爭吵，梵谷再度離家，前往海牙繼續追求他的夢想。<br /><br />
+                        &nbsp;&nbsp;&nbsp;&nbsp;梵谷在海牙受到親戚畫家安東‧奧佛的鼓勵，從此專心致力繪畫。梵谷在家期間，繪畫有很大進步，畫了近兩百張習
+                        作，他反覆描摹農民骨節粗大的手及刻苦的生活，這些習作為他創作<a href="#eat">「吃馬鈴薯的人」</a>奠定了基礎。<br /><br />
+                        <img src="eat.jpg" class="pic_2" id="eat" style="float:right" />
+                        &nbsp;&nbsp;&nbsp;&nbsp;1885年冬，他父親突然逝世，梵谷帶著菲薄的資產前往比利時，考取了美術學院，但卻因跟教授起爭執，而退學前往
+                        巴黎。<br /><br />
+                        &nbsp;&nbsp;&nbsp;&nbsp;梵谷在巴黎期間，重新點燃繪畫的激情，此時他的弟弟西奧，已成為一位精明能幹的畫商，同時為他引見了巴黎藝術
+                        界的大批名流－土魯茲、羅特列克、畢沙羅、秀拉，更與畫家高更結成莫逆之交。<br /><br />
+                        &nbsp;&nbsp;&nbsp;&nbsp;1888年2月，梵谷抵達普羅旺斯省的阿爾鎮著手創作，完成了「昂格拉橋」、「豐收景象」等作品，同時租下了拉馬丁
+                        廣場的黃屋，更寫信邀請高更與他同住，在此之前已創作了<a href="#coffee">「夜晚的咖啡館」</a>及著名的<a href="#bed">「臥室圖」</a>。<br /><br />
+                        <b class="b_2" style="margin-left:620px;">▲&nbsp;吃馬鈴薯的人</b>
+                    </div>
+                </section>
+            </td>
+        </tr>
+        <tr>
+            <td class="td_2"><!-- 表格 3 -->
+                <div style="width:1400px; margin-left:40px; margin-top:80px;">
+                    &nbsp;&nbsp;&nbsp;&nbsp;梵谷和高更在黃屋同住了兩個月，是他創作欲最旺盛時期，可是由於個性和看法差異太大，
+                    壓力越來越嚴重，十二月的一個晚上時，梵谷精神狂亂下割下自己的一隻右耳，洗淨後，用幾張圖畫紙將它包起來，外面又裹上一層
+                    報紙，然後走過拉馬丁廣場，把耳朵送給一位妓女後，便回去黃屋就寢，因精神錯亂被送進醫院。出院後，他一連數星期創作了幾幅
+                    寧靜安詳的作品，包括著名的<a href="#flower">「向日葵」</a>。<br /><br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;梵谷離開聖雷米後，前往巴黎小住，看望弟弟和弟媳，然後來到巴黎以北的奧文斯鄉下，嘉賽醫生負責照
+                    料他，並成為梵谷肖像畫中的人物，著名的<a href="#2">「麥田群鴉」</a>畫作也於這期間完成，同時反映出他內心深處強烈之悲哀。<br /><br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;1890 年五月梵谷搬到 Auvers-sur-Oise，向 Gachet 醫生租屋而住。接著又是另外一波的創作。他生命中
+                    的最後 70 天中，他畫了 70 幅油畫。但是他精神上的憤怒與憂鬱卻與日俱增。最後，1890 年七月二十九日，死於自殺。<br /><br />
+                    <img src="3-2.png" class="pic_3" id="coffee" style="margin-right:-70px; margin-left:10px;" />
+                    <img src="3-2.png" class="pic_3" id="bed" style="margin-right:-70px;" />
+                    <img src="3-2.png" class="pic_3" id="flower" style="margin-right:-70px;" />
+                    <img src="3-2.png" class="pic_3" id="2" style="margin-right:-70px;" />
+                    <img src="coffee.jpg" class="pic_4" style="margin-left:90px; margin-top:-600px;" />
+                    <img src="bed.jpg" class="pic_4" style="margin-left:80px; margin-top:-600px;" />
+                    <img src="flower.jpg" class="pic_4" style="margin-left:80px; margin-top:-600px;" />
+                    <img src="2.jpg" class="pic_4" style="margin-left:80px; margin-top:-600px;" /><br />
+                    <b class="b_2" style="margin-left:110px;">▲&nbsp;夜晚的咖啡館</b>
+                    <b class="b_2" style="margin-left:490px;">▲&nbsp;臥室圖</b>
+                    <b class="b_2" style="margin-left:830px;">▲&nbsp;向日葵</b>
+                    <b class="b_2" style="margin-left:1160px;">▲&nbsp;麥田群鴉</b><br /><br />
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td id="Impressionism" class="td_1"><!-- 表格 4 -->
+                <pre class="pre_1" style="margin-left:50px;">★ 後印象派介紹</pre>
+                <article><!-- 內容、內文 -->
+                    &nbsp;&nbsp;&nbsp;&nbsp;印象派畫家敏銳的感受到事件、日常生活、速度和旅遊的種種改變，
+                    他們成為現代化的詮釋者，將不尋常的事物表現在畫布上面；群眾、火車、戲劇、舞會、音樂會、
+                    酒吧都成為描繪對象。印象派畫家強調在作品中，忠實的描繪出對客觀事物的感覺和印象，不必牽
+                    強於主題思想。<br /><br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;繼承和變革印象派畫法的稱為『後印象派』，代表畫家有塞尚、梵谷、高
+                    更、羅特列克等人；後印象派不滿足於印象派片面追求外光和色彩，反對客觀主義的描繪自然，主張
+                    藝術要抒發感情和自我感受，要求藝術形象不同於現實生活中的物象。<br /><br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;後印象派畫家強調要描繪出客體的內在結構，表現出具體性和穩定性，富
+                    有體積感和裝飾效果。而梵谷在印象派的影響下，發展出自己獨特的繪畫風格，表現出另一種面貌，
+                    留給世人深刻的印象。<br /><br /><br />
+                </article>
+            </td>
+        </tr>
+        <tr>
+            <td id="Period" class="td_2"><!-- 表格 5 -->
+                <pre class="pre_1" style="margin-left:50px;">★ 三個時期畫風介紹</pre>
+                <article>
+                    <span style="font-family:DFKai-SB; font-size:25px; font-style:italic; font-weight:bold;">
+                        <a href="https://baike.baidu.com/item/%E7%8E%B0%E5%AE%9E%E4%B8%BB%E4%B9%89%E7%94%BB%E6%B4%BE">1 . 寫實派&nbsp;:&nbsp;</a>
+                    </span>
+                    首先是他的「荷蘭時期」，前後共為六年(1880~1886)，這是他漫長艱辛的
+                    學徒時期，學習的典範以巴比松派為主，此時他的題材多半是礦工、農人、織工、村婦，偶而寫生風景
+                    ，筆觸多半粗重，色調多半陰沉，<a href="#eat">『吃馬鈴薯的人』</a>是此期的代表作。論者認為，
+                    梵谷早期的畫風是荷蘭的寫實主義，有一種堅實而樸素的美感。<br /><br />
+                    <span style="font-family:DFKai-SB; font-size:25px; font-style:italic; font-weight:bold;">
+                        <a href="https://zh.wikipedia.org/wiki/%E5%8D%B0%E8%B1%A1%E6%B4%BE">2 . 印象派&nbsp;:&nbsp;</a>
+                    </span>
+                    第二個時期從1886到1888年，是他的巴黎時期，影響他最大的是印象派在色
+                    彩、線條、構圖、主題各方面重大革命。此時梵谷的調色板鮮明起來了，線條也流動起來，北方陰沉的
+                    寫實主義結束了。如『蒙馬特崗的花園』『阮維葉市的人魚飯店』一類作品，受了莫內、畢沙羅等人的
+                    影響，而『唐基老爹』那一幅，無論人像或背景，又顯示日本畫的風味，都尚未找到自己真正的畫風。<br /><br />
+                    <span style="font-family:DFKai-SB; font-size:25px; font-style:italic; font-weight:bold;">
+                        <a href="https://daddypoppy.pixnet.net/blog/post/221788200-%E6%AD%90%E6%B4%B2%E7%95%AB%E9%A2%A8%EF%BC%8D%E8%A1%A8%E7%8F%BE%E4%B8%BB%E7%BE%A9%EF%BC%88experssionism%EF%BC%89">
+                            3 . 表現派&nbsp;:&nbsp;
+                        </a>
+                    </span>
+                    第三個時期從1888到1890年七月自殺為止，只有短短兩年半的光景，卻是梵
+                    谷藝術的全盛時期。這時他的技巧已經成熟了，南方的大太陽燒豔了他的調色板，燒活了他的線條，充
+                    滿昂揚不安的動之世界，彷彿從生命中迸放出來。如<a href="#starry_night">『星夜』</a>，天上熱
+                    鬧，人間彾落，在畫風已脫離印象派，而進入表現派了；另一幅<a href="#2">『麥田群鴉』</a>，怪異
+                    中有一種不祥之美，這是梵谷死前傑作，自殺前瘋狂的壓迫感，已至於象徵之境。<br /><br /><br />
+                    <div class="div_2" id="starry_night"><img src="starry_night.jpg" class="pic_5" /></div>
+                    <b class="b_2" style="margin-left:720px; margin-top:-40px;">◀&nbsp;&nbsp;星夜</b>
+                    <b class="b_2" style="margin-left:960px; margin-top:-100px; position:absolute;">▼&nbsp;&nbsp;影片欣賞 : 梵谷畫200幅欣賞</b>
+                    <div class="div_2" style="margin-top:20px;"><img src="river.jpg" class="pic_5" /></div>
+                    <b class="b_2" style="margin-left:720px; margin-top:-40px;">◀&nbsp;&nbsp;隆河星夜</b>
+                    <video controls="controls" width="600" style="margin-left:840px; margin-top:-500px; position:absolute;"><!-- 影片 -->
+                        <source src="梵谷畫200幅欣賞.mp4" type="video/mp4" />
+                    </video>
+                    <br />
+                </article>
+            </td>
+        </tr>
+        <tfoot><!-- 版權說明設定 -->
+            <tr>
+                <td id="Data" style="height:250px; background-color:powderblue;"><!-- 表格 6 -->
+                    <a href="#top" class="a_1">↺&nbsp;回到首頁</a><br />
+                    <b style="font-family:DFKai-SB; font-size:20px; color:black; margin-left:300px; margin-top:-90px;">
+                        資料來源 : 1 . <a href="http://www.jlsh.mlc.edu.tw/ezfiles/0/1000/attach/51/pta_7047_9473517_59812.pdf">http://www.jlsh.mlc.edu.tw/ezfiles/0/1000/attach/51/pta_7047_9473517_59812.pdf</a><br />
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2 . <a href="https://www.youtube.com/watch?v=_3DI6iExDoo">https://www.youtube.com/watch?v=_3DI6iExDoo</a><br />
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3 . google<br /><br />
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;『本網頁為作業之用，如有侵權敬請告知』
+                    </b>
+                </td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
